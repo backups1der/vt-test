@@ -1,0 +1,12 @@
+services:
+  web:
+    image: ghcr.io/static-web-server/static-web-server:latest
+    container_name: sws   # static-web-server
+    ports:
+      - "8080:80"
+    volumes:
+      - ./src:/src:ro
+    environment:
+      - SERVER_ROOT=/src
+      - SERVER_PORT=80
+      - SERVER_ERROR_PAGE_404=/404.html
