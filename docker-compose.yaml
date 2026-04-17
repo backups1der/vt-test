@@ -10,3 +10,8 @@ services:
       - SERVER_ROOT=/src
       - SERVER_PORT=80
       - SERVER_ERROR_PAGE_404=/404.html
+  
+  # develop:
+  #  watch:
+  #   - patch: ./src
+  #   - action: sync
