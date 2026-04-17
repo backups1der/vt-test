@@ -3,7 +3,7 @@ services:
     image: ghcr.io/static-web-server/static-web-server:latest
     container_name: sws   # static-web-server
     ports:
-      - "8090:80"
+      - "8080:80"
     volumes:
       - ./src:/src:ro
     environment:
